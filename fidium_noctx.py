@@ -106,6 +106,6 @@ login_and_save_session(page, context)
 download_bill(page)
 
 # find the logoff dropdown to gracefully logoff
-page.get_by_text("Account (-7888)").click()
+page.get_by_text("Account (-").click()
 page.get_by_role("menuitem", name="Sign out").click()
 context.close()
